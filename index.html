@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcul d'Épargne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class=" moi">
+    <h1>Calcul d'Épargne</h1>
+</div>
+<div class="header">    
+<div class="container">
+    <form id="savingsForm">
+        <div class="form-group">
+            <label for="clientName">Nom du Client:</label>
+            <input type="text" id="clientName" name="clientName" required>
+        </div>
+        <div class="form-group">
+            <label for="savingPeriod">Durée de l'épargne (en années):</label>
+            <input type="number" id="savingPeriod" name="savingPeriod" required>
+        </div>
+        <div class="form-group">
+            <label for="initialAmount">Montant initial:</label>
+            <input type="number" id="initialAmount" name="initialAmount" required>
+        </div>
+        <div class="form-group">
+            <label for="interestRate">Taux d'intérêt annuel (%):</label>
+            <input type="number" id="interestRate" name="interestRate" step="0.01" required>
+        </div>
+        <div class="form-group">
+            <label for="annualContribution">Contribution annuel:</label>
+            <input type="number" id="annualContribution" name="annualContribution" step="0.01" required>
+        </div>
+        <input type="submit" value="Calculer">
+    </form>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
